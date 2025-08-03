@@ -69,11 +69,11 @@ $(function () {
       var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
 
       // STEP 3: Substitute {{randomCategoryShortName}} in home snippet
-      var homeHtmlToInsertIntoMainPage = insertProperty(
-        homeHtml,
-        "randomCategoryShortName",
-        '"' + chosenCategoryShortName + '"'
-      );
+     var homeHtmlToInsertIntoMainPage = insertProperty(
+  homeHtml,
+  "randomCategoryShortName",
+  chosenCategoryShortName
+);
 
       // STEP 4: Insert the final HTML into the main page
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
