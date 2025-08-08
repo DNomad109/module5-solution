@@ -128,7 +128,7 @@ $(function () {
       var description = "" + menuItems[i].description;
 
       html = insertProperty(html, "short_name", menuItems[i].short_name);
-      html = insertProperty(html, "catShortName", catShortName);
+      
 
       html = insertItemPrice(html, "price_small", menuItems[i].price_small);
       html = insertItemPortionName(html, "small_portion_name", menuItems[i].small_portion_name);
